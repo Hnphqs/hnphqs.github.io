@@ -80,7 +80,7 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="/hnphqs" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="https://github.com/hnphqs" title="github"><i class="icon-github"></i></a>
 		        
 					<a class="qq" target="_blank" href="/184750361" title="qq"><i class="icon-qq"></i></a>
 		        
@@ -122,7 +122,7 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="/hnphqs" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/hnphqs" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="qq" target="_blank" href="/184750361" title="qq"><i class="icon-qq"></i></a>
 			        
@@ -287,23 +287,32 @@
   
   
   
-  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+
+  
+
+  
+
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
-  var cloudTieConfig = {
-    url: "https://hnphqs.github.io/404/index.html", 
-    sourceId: "",
-    productKey: "true",
-    target: "cloud-tie-wrapper"
-  };
+var gitment = new Gitment({
+  id: "https://hnphqs.github.io/404/index.html",
+  owner: 'Hnphqs',
+  repo: 'hnphqs.github.io',
+  oauth: {
+    client_id: 'ab7eefc562702f4f34fa',
+    client_secret: '8f5550af1c6a45e104a7e4e290ee02f0e67feaf7',
+  },
+})
+gitment.render('gitment-ctn')
 </script>
-<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
   
 
-  
 
-  
 
-  
+
 
 
           </div>
